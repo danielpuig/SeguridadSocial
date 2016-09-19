@@ -53,7 +53,25 @@ public class SeguridadSocial {
     }
 
     public Persona obtenerPersonaPorDNI(String dni) {
+        boolean valid = true;
+        int e = 0;
+        for(int i = 0; i<personasList.size(); i++) {
+            if (dni == personasList.get(i).getDni()) {
+                valid = true;
+                e = i;
+                break;
+            }
+            else {
+                valid = false;
+            }
+        }
 
+        if(valid == true) {
+            return personasList.get(e);
+        }
+        else {
+            return null;
+        }
     }
 
     public Persona obtenerPersonaPorNumSS(String numSS) {
