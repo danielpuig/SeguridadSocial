@@ -75,7 +75,25 @@ public class SeguridadSocial {
     }
 
     public Persona obtenerPersonaPorNumSS(String numSS) {
+        boolean valid = true;
+        int e = 0;
+        for(int i = 0; i<personasList.size(); i++) {
+            if (numSS == personasList.get(i).getNumSS()) {
+                valid = true;
+                e = i;
+                break;
+            }
+            else {
+                valid = false;
+            }
+        }
 
+        if(valid == true) {
+            return personasList.get(e);
+        }
+        else {
+            return null;
+        }
     }
 
     public List<Persona> obtenerPersonasRangoSalarial(double min, double max){
