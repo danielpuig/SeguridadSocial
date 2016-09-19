@@ -69,4 +69,16 @@ public class Persona {
         this.salario = salario;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Persona persona = (Persona) o;
+
+        if (dni != null ? !dni.equals(persona.dni) : persona.dni != null) return false;
+        return numSS != null ? numSS.equals(persona.numSS) : persona.numSS == null;
+
+    }
+
 }
