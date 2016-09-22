@@ -110,11 +110,20 @@ public class SeguridadSocial {
     }
 
     public List<Persona> obtenerPersonasMayoresQue(int edad){
+        List<Persona> personas = new ArrayList<>();
+        int edadPers;
+        for(int i = 0; i<personasList.size(); i++) {
+            edadPers = personasList.get(i).getEdad();
+            if (edadPers > edad) {
+                personas.add(personasList.get(i));
+            }
+        }
 
+        return personas;
     }
 
     public List<Persona> obtenerTodas(){
-
+        return personasList;
     }
 
     @Override
