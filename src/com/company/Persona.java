@@ -81,4 +81,15 @@ public class Persona {
 
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "dni='" + dni + '\'' +
+                ", numSS='" + numSS + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", salario=" + salario +
+                '}';
+    }
 }
