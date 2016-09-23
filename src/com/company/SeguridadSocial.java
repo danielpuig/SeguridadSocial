@@ -18,7 +18,7 @@ public class SeguridadSocial {
     public void altaPersona(Persona persona) {
         boolean valid = true;
         for(int i = 0; i<personasList.size(); i++) {
-            if (persona.equals(personasList.get(i))) {
+            if (persona.equals(personasList.get(i))) { //TODO este equals no funciona, hay que comparar el dni y el numSs por separado
                 valid = false;
                 break;
             }
