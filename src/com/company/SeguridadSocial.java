@@ -126,6 +126,30 @@ public class SeguridadSocial {
         return personasList;
     }
 
+    public Persona obtenerPersonaSalarioMax() {
+        Persona personaMax = null;
+        double max = Double.MIN_VALUE;
+        for (Persona persona : personasList) {
+            if(persona.getSalario()> max) {
+                max = persona.getSalario();
+                personaMax = persona;
+            }
+        }
+        return personaMax;
+    }
+
+    public Persona obtenerPersonaSalarioMin() {
+        Persona personaMin = null;
+        double min = Double.MAX_VALUE;
+        for (Persona persona : personasList) {
+            if(persona.getSalario()< min) {
+                min = persona.getSalario();
+                personaMin = persona;
+            }
+        }
+        return personaMin;
+    }
+
     @Override
 
     public String toString() {
