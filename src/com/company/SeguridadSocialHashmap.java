@@ -54,7 +54,7 @@ public class SeguridadSocialHashmap {
     public List<Persona> obtenerPersonasMayoresQue(int edad){
         List<Persona> edades = new ArrayList<>();
         for (Persona persona2 : personaMapDni.values()) {
-            if(persona2.getEdad() >= edad) {
+            if(persona2.getEdad() >= edad){
                 edades.add(persona2);
             }
         }
