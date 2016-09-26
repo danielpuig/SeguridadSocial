@@ -70,18 +70,6 @@ public class Persona {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Persona persona = (Persona) o;
-
-        if (dni != null ? !dni.equals(persona.dni) : persona.dni != null) return false;
-        return numSS != null ? numSS.equals(persona.numSS) : persona.numSS == null;
-
-    }
-
-    @Override
     public String toString() {
         return "Persona{" +
                 "dni='" + dni + '\'' +

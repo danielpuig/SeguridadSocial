@@ -1,9 +1,11 @@
 package com.company;
 
 
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-        SeguridadSocial seguridadSocial = new SeguridadSocial();
+        SeguridadSocialHashmap seguridadSocial = new SeguridadSocialHashmap();
 
         Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomás", 35, 45000.00);
         Persona maria =  new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 61300.20);
