@@ -21,6 +21,8 @@ public class SeguridadSocialHashmap {
 
     }
 
+    //añado comentario
+
     public void bajaPersona(String dni) {
 
         if(personaMapDni.containsKey(dni)) {
